@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+body{text-align:center;background-color:#f2f2fc;}
+#kc{font-size:10vh;color:#1d1d1e;}#name{font-size:2.5vh;color:#68686b;opacity:0.5;}
+</style></head>
+<body>
+<div id='kc'></div>
+
+<script>
+var kc = document.getElementById('kc');
+document.addEventListener('keydown',function(event){kc.innerHTML = event.keyCode + '<br>' + '<span id="name">'+event.key+'</span>';});
+</script>
+
+</body>
+
+</html>
